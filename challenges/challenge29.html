@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contente="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+    <style>
+       body {height: 3000px;}
+       .one {background-color: beige; transition: all 3s;}
+       .two {background-color: blueviolet; transition: all 3s;}
+       .three {background-color: coral; transition: all 3s;}
+       .four {background-color: cornflowerblue; transition: all 3s;}
+       .five {background-color: darkgoldenrod; transition: all 3s;}
+    </style>
+</head>
+<body class="one">
+    <h1>Challenges</h1>
+    <p>Scroll Down</p>
+    
+    <script>
+        
+        var pagetop;
+        var bodytag = document.querySelector('body');
+
+        window.addEventListener('scroll', function(){
+            pagetop = window.pageYOffset;
+
+            switch (true){
+                case pagetop< 500: bodytag.className="one"; break;
+                case pagetop< 1000: bodytag.className="two"; break;
+                case pagetop< 1500: bodytag.className="three"; break;
+                case pagetop< 2000: bodytag.className="four"; break;
+                default: bodytag.className="five"
+            }  
+        })
+    </script>
+</body>

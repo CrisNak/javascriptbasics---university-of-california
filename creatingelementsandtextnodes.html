@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contente="width=device-width, initial-scale=1.0">
+    <title>DOM exemples</title>
+</head>
+<body>
+    <h1>DOM exemples</h1>
+    <div>
+        <p>This is the first paragraph on the page.</p>
+    </div>
+
+    <script>
+        //adiciona um novo text pelo js
+        var mytag = document.createElement('p');
+        var mysentence = document.createTextNode('seconde paragraph');
+        mytag.appendChild(mysentence);
+        var mydiv = document.querySelector('div');
+        mydiv.appendChild(mytag);
+        //short: document.querySelector('div').appendChild(mytag);
+
+    </script>
+</body>

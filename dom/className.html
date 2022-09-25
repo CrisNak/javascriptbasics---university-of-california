@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8"> 
+   <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+   <title>DOM EXEMPLE</title>
+   <style>
+        .blue {color: blue;}
+   </style>
+</head>
+<body>
+    <h1>DOM exemples</h1>
+    <div id="special">
+        <p>Here is some text</p>
+        <p>More paragraph</p>
+        <p>More text</p>
+    </div>
+    <form>
+        <label><input type="checkbox">yes</label>
+    </form>
+        
+    <script>
+        var firstpara = document.querySelector('p');
+        firstpara.className = 'blue';
+        //muda todos os match para uma class 
+
+        var checkbox = document.querySelector('input');
+        checkbox.setAttribute("checked", "checked")
+    </script>
+</body>
+</html>

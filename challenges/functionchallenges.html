@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset = "UTF-8">
+    <title>Challenge 1</title>
+</head>
+<body>
+    <h1>Basic Javascript Challenges</h1>
+    <h2>Challenge 1</h2>
+
+    <script>
+
+        var yourname = prompt('provide your name', '');
+
+        function hello(name){
+            if(name == null || name ==''){
+                console.log("You didnt't give me a name");
+            }
+            else{
+                console.log(`Hello! ${name}`);
+            }
+        }
+        hello(yourname)
+
+
+
+        var yourname = prompt('provide your name', '');
+
+        function hello(name){
+            if(name == null || name ==''){
+                greeting = "You didnt't give me a name";
+            }
+            else{
+                greeting = `Hello! ${name}`;
+            }
+            return greeting;
+        }
+        hello(yourname)
+
+
+
+        var yourname = prompt('provide your name', '');
+        var food = ['cheese', 'fruit', 'chicken', 'dessert']
+
+        function hello(name){
+            if(name == null || name ==''){
+                greeting = "You didnt't give me a name";
+            }
+            else{
+                greeting = `Hello! ${name}`;
+            }
+            return greeting;
+        }
+        function hospitality(name,gift){
+            for (var i=0; i<gift.length; i++){
+                console.log(`${name}, would you like some ${gift[i]}?`)
+            }
+        }
+        hospitality(yourname, food)
+
+
+
+        var yourname = prompt('provide your name', '');
+        var food = ['cheese', 'fruit', 'chicken', 'dessert']
+
+        function hello(name){
+            if(name == null || name ==''){
+                greeting = "You didnt't give me a name";
+            }
+            else{
+                greeting = `Hello! ${name}`;
+            }
+            return greeting;
+        }
+        function randomint(min, max){
+            return Math.floor((max-min+1)*Math random()) + min;
+        }
+        function hospitality(name,gift){
+            console.log(hello(name));
+            var randomgift = gift[randomint(0, gift.length-1)];
+            console.log(`${name}, would you like some ${randomgift}?`)
+            }
+        
+        hospitality(yourname, food)
+
+
+    </script>
+</body>
+</html>

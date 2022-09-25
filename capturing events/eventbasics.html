@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8"> 
+   <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+   <title>capturing events</title>
+   </head>
+<body>
+    <h1>Capturing events</h1>
+    <button>Don't press Me!</button>
+            
+    <script>
+        var btn = document.querySelector('button');
+
+        function ouch(){
+            alert("oh no you didn't")
+        }
+
+        btn.onclick = ouch
+    </script>
+</body>
+</html>

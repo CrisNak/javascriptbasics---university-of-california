@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8"> 
+   <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+   <title>DOM EXEMPLE</title>
+</head>
+<body>
+    <h1>DOM exemples</h1>
+    <div id="special">
+        <p>Here is some text</p>
+        <p>More paragraph</p>
+        <p>More text</p>
+    </div>
+        
+    <script>
+        var mydiv = document.getElementById("special");
+        mydiv.innerHTML = "<p>I love cheese</P>";
+            //muda o html
+        //short:
+        //document.querySelector('#special').innerHTML = "<p>I love cheese</P>"; 
+    </script>
+</body>
+</html>

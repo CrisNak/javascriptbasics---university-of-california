@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset = "UTF-8">
+    <title>Challenge week3</title>
+</head>
+<body>
+    <h1>Javascript Event Challeng</h1>
+    <p>Hera is a paragraph of text</p>
+    <button>Turn Green Dammit!</button>
+    
+    <script>
+        (function(){
+            "use strict";
+            const ptag = document.querySelector('p');
+            const btn = document.querySelector('button');
+            btn.addEventListener('click', function(){
+                ptag.style.color ='green';
+        });
+    })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contente="width=device-width, initial-scale=1.0">
+    <title>JS scope</title>
+</head>
+<body>
+    <h1>Scope in JS</h1>
+    <p>one</p>
+    <p>two</p>
+    <p>three</p>
+    
+    <script>
+        //you can wrap your code an immediatly invoked function
+        //this anynynous function runs as soon as the script loads
+        //and it will also keep variables out of global scope 
+        //AVOID GLOBE SCOPE!!
+
+        (function(){
+            var myps = document.querySelectorAll('p');
+            for(var i=0; i<myps.lenght; i++){
+                myps[i].style.color = 'red';
+            }
+        }());
+
+        //(function dostuff(){
+            //var myps = document.querySelectorAll('p');
+            //for(var i=0; i<myps.lenght; i++){
+                //myps[i].style.color = 'red';
+            //}
+        //}());
+
+        // é igual a:
+
+        //function dostuff(){
+            //var myps = document.querySelectorAll('p');
+            //for(var i=0; i<myps.lenght; i++){
+                //myps[i].style.color = 'red';
+            //}
+        //});
+        //dostuff();
+
+
+
+  
+
+    </script>
+</body>

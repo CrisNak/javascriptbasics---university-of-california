@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contente="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+
+</head>
+<body>
+    <h1>Challenges</h1>
+    <div>
+        <p> Here is the first paragraph os text</p>
+    </div>
+    <button>Add a paragraph</button>
+    <button>Remove Paragraph</button>
+
+    <script>
+        var divtag = document.querySelector('div');
+        var btnadd = document.querySelectorAll('button')[0];
+        var btndelete = document.querySelectorAll('button')[1];
+        var numofp = 1;
+
+        btnadd.addEventListener('click', function(){
+            numofp ++;
+            var newp = document.createElement('p');
+            var ptext = document.createTextNode(`This is paragraph number ${numofp}`);
+            newp.appendChild(ptext);
+            divtag.appendChild(newp);
+        })
+        
+        btndelete.addEventListener('click', function(){
+            if(numofp >1){
+                divtag.removeChild(divtag.children[numofp - 1])
+                numofp--;
+            }
+            else {
+                alert("Don't delete this last paragraph!")
+            }
+           
+        });
+
+    </script>
+</body>

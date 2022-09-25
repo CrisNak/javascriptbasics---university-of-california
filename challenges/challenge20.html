@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset = "UTF-8">
+    <title>Challenge week3</title>
+    <style>
+        .blue {color: blue;}
+    </style>
+</head>
+<body>
+    <h1>Article 1</h1>
+    <div id="one">
+        <p>one paragraph</p>
+        <p>two paragraph</p>
+        <p>three paragraph</p>
+        <img src="http://meadpoint.net/images/xmasajax.jpg">
+    </div>
+
+    <div id="two">
+        <h1>Article 2</h1>
+        <p>one paragraph</p>
+        <p>two paragraph</p>
+        <p>three paragraph</p>
+    </div>
+
+    
+    <script>
+    var img = document.querySelector('#one img');
+    img.setAttribute('src', 'http://meadpoint.net/images/xmasajax.jpg');
+
+    var secondarticlep = document.querySelectorAll('#two p');
+
+    for (var i=0; i<secondarticlep.length; i++){
+        secondarticlep[i].className = "blue";
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contente="width=device-width, initial-scale=1.0">
+    <title>JS scope</title>
+</head>
+<body>
+    <h1>Scope in JS</h1>
+    
+    <script>
+        var avariable = "this is global";
+        function testscope(){
+            oopsGlobal = "this is accidentally global"; //é uma variável 
+            //global pq não está escrito var no começo, se escrever, se torna uma variável local
+            var avariable = "this is local";// mesma variavel que a anterior num local específico
+            console.log(avariable);
+        }
+
+        testscope(); //run the function
+        console.log(avariable);
+
+
+
+    </script>
+</body>

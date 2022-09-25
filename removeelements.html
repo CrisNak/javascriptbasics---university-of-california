@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contente="width=device-width, initial-scale=1.0">
+    <title>DOM exemples</title>
+</head>
+<body>
+    <h1>DOM exemples</h1>
+    <div>
+        <p>This is the first paragraph on the page.</p>
+        <p>Remove this paragraph</p>
+    </div>
+
+    <script>
+        var mydiv = document.querySelector('div');
+        mydiv.removeChild(mydiv.children[1]); //remove o segundo pagrafo (children[1])
+    </script>
+</body>

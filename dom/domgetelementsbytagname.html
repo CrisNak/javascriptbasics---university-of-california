@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8"> 
+   <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+   <title>DOM EXEMPLE</title>
+</head>
+<body>
+    <h1>DOM exemples</h1>
+    <p>Here is a paragraph with a unique ID</p>
+    <p>More paragraph</p>
+    <p>More paragraph</p>
+    <script>
+        var mytext = document.getElementsByTagName("p");
+        console.log(mytext);
+        //dá o texto em lista: HTMLCollection(3) [p, p, p]
+        for (var i=0; i<mytext.lebgth; i++){
+            mytext[i].style.color = 'red';
+            alert(`this is element ${i}`);
+            // add alert() method to see the value of the variable i each
+            //time throught the loop and run the page in firefox
+        }
+    </script>
+</body>
+</html>

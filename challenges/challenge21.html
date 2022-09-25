@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset = "UTF-8">
+    <title>Challenge week3</title>
+</head>
+<body>
+    <h1>Challenges</h1>
+
+    <a href="https://en.wikipedia.org/wiki/Llama">Link1</a>
+    <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal">Link2</a>
+    <a href="https://pt.wikipedia.org/wiki/Omayra_S%C3%A1nchez">Link3</a>
+    
+    <script>
+    var anchors = document.getElementsByTagName('a');
+
+    for(var i=0; i<anchors.length; i++){
+        var link = anchors[i].getAttribute('href');
+
+        if(link === "https://en.wikipedia.org/wiki/Llama"){
+            anchors[i].innerHTML = "Llamas are cool!";
+        }
+    }
+
+    </script>
+</body>
+</html>

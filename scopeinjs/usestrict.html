@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8"> 
+   <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+   <title>scope in js</title>
+
+</head>
+<body>
+    <h1>scope in js</h1>
+    
+    <p>Here is some text</p>
+    <p>More paragraph</p>
+    <p>More text</p>
+    
+    <script>
+        'use strict';
+        newvar = 'not properly declared';
+        console.log(newvar)
+
+        (function(){
+            'use strict';
+            var myps = document.querySelectorAll('p');
+            for(var i=0; i<myps.length; i++){
+                myps[i].style.color = 'red';
+            }
+        }());
+
+    </script>
+</body>
+</html>

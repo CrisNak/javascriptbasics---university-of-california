@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8"> 
+   <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+   <title>DOM EXEMPLE</title>
+</head>
+<body>
+    <h1>DOM exemples</h1>
+    <div id="special">
+        <p>Here is some text</p>
+        <p>More paragraph</p>
+        <p>More text</p>
+    </div>
+    <p>Not this paragraph</p>
+    
+    <script>
+        var mytext = document.querySelectorAll("#special p");
+        for (var i=0; i<mytext.length; i++){
+            mytext[i].style.fontWeight = 'bold';
+        }
+        //muda todos os elementos que match o seletor//
+    </script>
+</body>
+</html>

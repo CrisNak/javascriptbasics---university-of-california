@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset = "UTF-8">
+    <title>Challenge week3</title>
+</head>
+<body>
+    <h1>Javascript Event Challeng</h1>
+    <div>
+        <p>Here is the first paragraph of text</p>
+    </div>
+    <button>Add a paragraph</button>
+    
+    <script>
+        var divtag = document.querySelector('div');
+        var btn = document.querySelector('button');
+
+        btn.addEventListener('click', function(){
+
+            var newp = document.createElement('p');
+            var ptext = document.createTextNode('A new paragraph');
+            newp.appendChild(ptext);
+            divtag.appendChild(newp);
+        });
+
+    </script>
+</body>
+</html>

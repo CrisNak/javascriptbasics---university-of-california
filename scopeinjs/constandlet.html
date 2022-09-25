@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8"> 
+   <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+   <title>scope in js</title>
+
+</head>
+<body>
+    <h1>scope in js</h1>
+    
+    <p>Here is some text</p>
+    <p>More paragraph</p>
+    <p>More text</p>
+    
+    <script>
+        //block level scope
+        const cheese ='yummy'
+
+        for(let i=0; i<10; i++){
+            console.log(i);
+        }
+        //console.log(`the value of i is ${i}`) - não dá certo pois 
+        //${} é só para variaveis - let não é uma variavel
+
+        //const cheese ='cheese is yummy';
+        //console.log(cheese);
+        //cheese = 'cheese is not good'
+        //programa não deixa mudar o valor de cheese, pq a primeira é uma const
+
+    </script>
+</body>
+</html>
